@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <queue>
-#include <conio.h> // For _getch() on Windows, use <ncurses.h> on Linux
+#include <conio.h> 
 
 using namespace std;
 
@@ -24,7 +24,7 @@ void generateGrid(vector<vector<int>> &grid, int size) {
 }
 
 void displayGrid(const vector<vector<int>> &grid, int px, int py) {
-    system("cls"); // For Windows, use "clear" for Linux
+    system("cls"); 
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
             if (i == px && j == py) cout << "P ";
